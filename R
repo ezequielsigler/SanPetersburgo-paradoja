@@ -1,0 +1,109 @@
+#el objetivo de este script es analizar la paradoja de San Petersburgo en forma empirica
+
+#el problema se ejemplifica de la siguiente forma:
+# se lanza una moneda, si sale cara se avanza a la siguiente ronda, si sale seca se recibe 1$
+# en las rondas sucesivas se repite el proceso, pero ahora los pagos seran de $1 * 2^(numero de rondas - 1)
+# es decir: si sale seca en la:
+#   segunda ronda entonces el pago es de 2$
+#   tercera ronda entonces el pago es de 4$
+#   cuarta ronda entonces el pago es de 8$
+
+# si calculamos el pago esperado en forma teorica su resultado es infinito (suma de infinitos terminos de $0.5)
+#¿pero cuanto estarias dispuesto a pagar por participar en este juego?
+
+#EMPECEMOS
+
+#estimo el numero de rondas jugadas, para eso utilizo la funcion runif(1) que obtiene un numero aleatorio entre 0 y 1
+numero_rondas <- function(){
+  i=0
+  rondas = 1
+    while(i < 1) 
+    {
+    siguiente_ronda = runif(1)
+      if(siguiente_ronda>0.5){
+      i = 1
+      } else {
+      rondas = rondas + 1
+      }
+    }
+  return(rondas)
+}
+
+#calculo el pago en un juego determinado
+pago_juego <- function() {
+  rondas = numero_rondas()
+  pago = 1 * 2^(rondas-1)
+  #print(pago) #esta linea debe ser borrada si se utiliza valor_esperado_empirico(n) con un n muy grande
+  return(pago)
+}
+
+#esta funcion realiza el juego n veces y luego calcula el pago promedio
+valor_esperado_empirico <- function(n) {
+  i = 0
+  pagos_totales = 0
+    while(i < n){
+    pagos_totales = pagos_totales + pago_juego()
+    i = i+1
+    }
+  valor_empirico = pagos_totales/n
+  #print("el valor promedio es de: ")
+  return(valor_empirico)
+}
+
+valor_esperado_empirico(10)
+
+
+#busco armar un histograma con multiples simulaciones
+#simulaciones: es el numero de simulaciones para cada valor en el histograma
+#puntos: es el numero de valores del histograma
+
+histo_juego <- function(puntos, simulaciones = 1){
+  i = 0
+  resultados = c()
+    while(i < puntos) {
+      resultados[i+1] = valor_esperado_empirico(simulaciones)
+      i = i+1
+    }
+  return(hist(resultados, breaks= 200))
+}
+
+
+juego <- function(puntos, simulaciones = 1){
+  i = 0
+  resultados = c()
+  while(i < puntos) {
+    resultados[i+1] = valor_esperado_empirico(simulaciones)
+    i = i+1
+  }
+  return(resultados)
+}
+
+#prueba de las funciones
+juego(200,1000)
+
+set.seed(1)
+histo_juego(200,1000)
+
+#analisis
+
+pagos_por_ronda <- function(n){
+A = juego(n,1)
+i = 1
+pagos_promedio = c()
+while (i < 20){
+  pagos_promedio[i] = (sum(A == 1*2^i)*1*2^i)/n
+  i = i+1
+} 
+return(pagos_promedio)
+}
+
+par(mfrow = c(3,2))
+set.seed(1)
+plot(c(1:19),pagos_por_ronda(100))
+plot(c(1:19),pagos_por_ronda(1000))
+plot(c(1:19),pagos_por_ronda(10000))
+plot(c(1:19),pagos_por_ronda(100000))
+plot(c(1:19),pagos_por_ronda(1000000))
+plot(c(1:19),pagos_por_ronda(10000000))
+
+
