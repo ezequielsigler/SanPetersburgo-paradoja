@@ -11,9 +11,10 @@
 # si calculamos el pago esperado en forma teorica su resultado es infinito (suma de infinitos terminos de $0.5)
 #¿pero cuanto estarias dispuesto a pagar por participar en este juego?
 
-#EMPECEMOS
 
-#estimo el numero de rondas jugadas, para eso utilizo la funcion runif(1) que obtiene un numero aleatorio entre 0 y 1
+# numero_rondas() estima el numero de rondas jugadas, para eso utilizo la funcion runif(1) que obtiene un numero aleatorio entre 0 y 1, 
+# el jugador avanza de ronda cuando el numero aleatorio es mayor a 0.5, caso contrario se termina el juego
+
 numero_rondas <- function(){
   i=0
   rondas = 1
@@ -29,7 +30,9 @@ numero_rondas <- function(){
   return(rondas)
 }
 
-#calculo el pago en un juego determinado
+
+# pago_juego() determina el pago a realizar en una jugada
+
 pago_juego <- function() {
   rondas = numero_rondas()
   pago = 1 * 2^(rondas-1)
@@ -37,7 +40,9 @@ pago_juego <- function() {
   return(pago)
 }
 
-#esta funcion realiza el juego n veces y luego calcula el pago promedio
+
+# valor_esperado_empirico(n) realiza n jugadas y calcula el pago promedio
+
 valor_esperado_empirico <- function(n) {
   i = 0
   pagos_totales = 0
@@ -50,10 +55,8 @@ valor_esperado_empirico <- function(n) {
   return(valor_empirico)
 }
 
-valor_esperado_empirico(10)
 
-
-#busco armar un histograma con multiples simulaciones
+# histo_juego(puntos,simulaciones)
 #simulaciones: es el numero de simulaciones para cada valor en el histograma
 #puntos: es el numero de valores del histograma
 
@@ -68,34 +71,41 @@ histo_juego <- function(puntos, simulaciones = 1){
 }
 
 
-juego <- function(puntos, simulaciones = 1){
+#resultados_juego(x, n) regresa una vector con x valores, cada uno representa el pago promedio luego de n de jugadas
+
+resultado_juego <- function(x, n = 1){
   i = 0
   resultados = c()
-  while(i < puntos) {
-    resultados[i+1] = valor_esperado_empirico(simulaciones)
+  while(i < x) {
+    resultados[i+1] = valor_esperado_empirico(n)
     i = i+1
   }
   return(resultados)
 }
 
-#prueba de las funciones
-juego(200,1000)
 
-set.seed(1)
-histo_juego(200,1000)
+#pagos_por_ronda(x, y) realiza x simulaciones, luego muestra la recaudacion promedio en cada una de las rondas, siendo la ronda 1 cuando salio cara a la primera, la ronda 2 cuando salio cara a la segunda y asi sucesivametne.
 
-#analisis
-
-pagos_por_ronda <- function(n){
-A = juego(n,1)
+pagos_por_ronda <- function(x, y = 20){
+A = resultados_juego(x,1)
 i = 1
 pagos_promedio = c()
-while (i < 20){
-  pagos_promedio[i] = (sum(A == 1*2^i)*1*2^i)/n
+while (i < y){
+  pagos_promedio[i] = (sum(A == 1*2^i)*1*2^i)/x
   i = i+1
 } 
 return(pagos_promedio)
 }
+
+#prueba de las funciones
+set.seed(1)
+valor_esperado_empirico(1000)
+histo_juego(200,1000)
+resultado_juego(200,1000)
+
+
+#Analisis
+
 
 par(mfrow = c(3,2))
 set.seed(1)
