@@ -98,7 +98,8 @@ pagos_por_ronda <- function(x, y = 25){
 }
 
 #prueba de las funciones
-set.seed(1)
+set.seed(1234)
+valor_esperado_empirico(1000)
 valor_esperado_empirico(1000)
 histo_juego(200,1000)
 resultados_juegos(200,1000)
