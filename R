@@ -18,15 +18,15 @@
 numero_rondas <- function(){
   i=0
   rondas = 1
-    while(i < 1) 
-    {
+  while(i < 1) 
+  {
     siguiente_ronda = runif(1)
-      if(siguiente_ronda>0.5){
+    if(siguiente_ronda>0.5){
       i = 1
-      } else {
+    } else {
       rondas = rondas + 1
-      }
     }
+  }
   return(rondas)
 }
 
@@ -46,10 +46,10 @@ pago_juego <- function() {
 valor_esperado_empirico <- function(n) {
   i = 0
   pagos_totales = 0
-    while(i < n){
+  while(i < n){
     pagos_totales = pagos_totales + pago_juego()
     i = i+1
-    }
+  }
   valor_empirico = pagos_totales/n
   #print("el valor promedio es de: ")
   return(valor_empirico)
@@ -63,17 +63,17 @@ valor_esperado_empirico <- function(n) {
 histo_juego <- function(puntos, simulaciones = 1){
   i = 0
   resultados = c()
-    while(i < puntos) {
-      resultados[i+1] = valor_esperado_empirico(simulaciones)
-      i = i+1
-    }
+  while(i < puntos) {
+    resultados[i+1] = valor_esperado_empirico(simulaciones)
+    i = i+1
+  }
   return(hist(resultados, breaks= 200))
 }
 
 
 #resultados_juego(x, n) regresa una vector con x valores, cada uno representa el pago promedio luego de n de jugadas
 
-resultado_juego <- function(x, n = 1){
+resultados_juegos <- function(x, n = 1){
   i = 0
   resultados = c()
   while(i < x) {
@@ -86,34 +86,36 @@ resultado_juego <- function(x, n = 1){
 
 #pagos_por_ronda(x, y) realiza x simulaciones, luego muestra la recaudacion promedio en cada una de las rondas, siendo la ronda 1 cuando salio cara a la primera, la ronda 2 cuando salio cara a la segunda y asi sucesivametne.
 
-pagos_por_ronda <- function(x, y = 20){
-A = resultados_juego(x,1)
-i = 1
-pagos_promedio = c()
-while (i < y){
-  pagos_promedio[i] = (sum(A == 1*2^i)*1*2^i)/x
-  i = i+1
-} 
-return(pagos_promedio)
+pagos_por_ronda <- function(x, y = 25){
+  A = resultado_juego(x,1)
+  i = 1
+  pagos_promedio = c()
+  while (i < y){
+    pagos_promedio[i] = (sum(A == 1*2^i)*1*2^i)/x
+    i = i+1
+  } 
+  return(pagos_promedio)
 }
 
 #prueba de las funciones
 set.seed(1)
 valor_esperado_empirico(1000)
 histo_juego(200,1000)
-resultado_juego(200,1000)
+resultados_juegos(200,1000)
 
 
 #Analisis
-
-
 par(mfrow = c(3,2))
 set.seed(1)
-plot(c(1:19),pagos_por_ronda(100))
-plot(c(1:19),pagos_por_ronda(1000))
-plot(c(1:19),pagos_por_ronda(10000))
-plot(c(1:19),pagos_por_ronda(100000))
-plot(c(1:19),pagos_por_ronda(1000000))
-plot(c(1:19),pagos_por_ronda(10000000))
-
-
+plot(c(1:24),pagos_por_ronda(100), yaxp = c(0,1,2))
+abline(h=0.5,lty=3,col=4)
+plot(c(1:24),pagos_por_ronda(1000), yaxp = c(0,1,2))
+abline(h=0.5,lty=3,col=4)
+plot(c(1:24),pagos_por_ronda(10000), yaxp = c(0,1,2))
+abline(h=0.5,lty=3,col=4)
+plot(c(1:24),pagos_por_ronda(100000), yaxp = c(0,1,2))
+abline(h=0.5,lty=3,col=4)
+plot(c(1:24),pagos_por_ronda(1000000), yaxp = c(0,1,2))
+abline(h=0.5,lty=3,col=4)
+plot(c(1:24),pagos_por_ronda(10000000), yaxp = c(0,1,2))
+abline(h=0.5,lty=3,col=4)
