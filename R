@@ -87,7 +87,7 @@ resultados_juegos <- function(x, n = 1){
 #pagos_por_ronda(x, y) realiza x simulaciones, luego muestra la recaudacion promedio en cada una de las rondas, siendo la ronda 1 cuando salio cara a la primera, la ronda 2 cuando salio cara a la segunda y asi sucesivametne.
 
 pagos_por_ronda <- function(x, y = 25){
-  A = resultado_juego(x,1)
+  A = resultados_juegos(x,1)
   i = 1
   pagos_promedio = c()
   while (i < y){
