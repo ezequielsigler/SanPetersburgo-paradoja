@@ -31,7 +31,15 @@ Vemos que el valor del "precio justo" cambio significativamente respecto de la m
 
 ![Caption for the picture.](/histo.png)
 
-Podemos observar que en la mayoria de las observaciones el pago promedio es menor a $10, sin embargo tambien podemos ver que los valores 
+Podemos observar que en la mayoria de las observaciones el pago promedio es menor a $10, sin embargo se ve que siguen existiendo observaciones muy por encima del valor promedio. Observamos que los valores extremos se siguen repitiendo.
+
+
+Es momento de dejar de tomar observaciones y plantear el problema desde un punto de vista matematico, concretamente debemos determinar el resultado esperado es participar de este juego o su esperanza matematica. 
+
+\[
+\sum_{i=1}^{n}x_{i}=x_{1}+x_{2}+x_{3} 
+\]
+
 
 ![Caption for the picture.](/promedio_por_ronda.png)
 
