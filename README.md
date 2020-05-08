@@ -37,7 +37,7 @@ Podemos observar que en la mayoria de las observaciones el pago promedio es meno
 Es momento de dejar de tomar observaciones y plantear el problema desde un punto de vista matematico, concretamente debemos determinar el resultado esperado es participar de este juego o su esperanza matematica. 
 
 \[
-$\sum_{i=1}^{n}x_{i}=x_{1}+x_{2}+x_{3} $
+\prod_{i=1}^{3}x_{i}=x_{1}\cdot x_{2}\cdot x_{3} 
 \]
 
 
