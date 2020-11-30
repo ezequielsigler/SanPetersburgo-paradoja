@@ -34,7 +34,7 @@ Vemos que el valor del "precio justo" cambio significativamente respecto de la m
 Podemos observar que en la mayoria de las observaciones el pago promedio es menor a $10, sin embargo se ve que siguen existiendo observaciones muy por encima de los $10. Observamos que existen valores extremadamente grandes.
 
 
-Es momento de dejar de tomar observaciones y plantear el problema desde un punto de vista matematico, concretamente debemos determinar el resultado esperado es participar de este juego o su esperanza matematica. 
+Es momento de dejar de tomar observaciones y plantear el problema desde un punto de vista matematico, concretamente debemos determinar el resultado esperado de participar de este juego o su esperanza matematica. 
 
 
 \mho
