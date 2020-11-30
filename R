@@ -80,7 +80,7 @@ resultados_juegos <- function(x, n = 1){
     resultados[i+1] = valor_esperado_empirico(n)
     i = i+1
   }
-  return(hist(resultados, main = "Histograma de los pagos", xlab = "Pago Promedio", ylab = "frecuencia", breaks= 200))
+  return(hist(resultados, main = "Histograma de los pagos", xlab = "Pago Promedio", ylab = "Frecuencia", breaks= 200))
 }
 
 
