@@ -29,7 +29,7 @@ Establecer el pago correcto a travez de un experimento empirico parece tener sen
 Vemos que el valor del "precio justo" cambio significativamente respecto de la muestra anterior, por esta razon decidimos repetir esta muestra 200 veces mas (cada una con 1000 observaciones) y tomar nota de cada valor promedio.
 
 
-![Caption for the picture.](/histo.png)
+![Caption for the picture.](/Histograma.png)
 
 Podemos observar que en la mayoria de las observaciones el pago promedio es menor a $10, sin embargo se ve que siguen existiendo observaciones muy por encima de los $10. Observamos que existen valores extremadamente grandes.
 
