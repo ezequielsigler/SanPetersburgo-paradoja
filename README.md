@@ -22,7 +22,7 @@ Esto es una cuestion subjetiva, que la vamos a dejar a libertad del lector, imag
 
 ### ¿Cual es el pago inicial que sea justo tanto para el jugador como para el organizador?
 
-Para aproximarnos a una respuesta decidimos observar que pasa cuando la gente juega, decidimos tomar cientos de observaciones y calcular el pago promedio que reciben los jugadores, concretamente tomamos 1.000 observaciones y encontramos que el pago promedio fue de $6.45. Con este dato empirico podriamos decidir jugar cada vez que la suma inicial sea menor a $6.45, o ser organizadores cada vez que la suma inicial sea mayor a $6.45. Este valor permite dudar de la opnion de algunos matematicos que dicen que el pago justo deberia ser una suma extremandamente grande. 
+Para aproximarnos a una respuesta decidimos observar que pasa cuando la gente juega, decidimos tomar cientos de observaciones y calcular el pago promedio que reciben los jugadores, concretamente tomamos 1.000 observaciones y encontramos que el pago promedio fue de $6.45. Con este dato empirico podriamos decidir jugar cada vez que la suma inicial sea menor a $5.70, o ser organizadores cada vez que la suma inicial sea mayor a $5.70. Este valor permite dudar de la opnion de algunos matematicos que dicen que el pago justo deberia ser una suma extremandamente grande. 
 
 Establecer el pago correcto a travez de un experimento empirico parece tener sentido, pero podrian existir grandes diferencias entre los datos de un experimento empirico y el verdadero promedio, para estar mas seguros, decidimos tomar otra muestra de 1000 observaciones, esta vez el pago promedio fue de $8.66
 
