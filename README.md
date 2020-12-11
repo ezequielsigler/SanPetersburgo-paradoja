@@ -59,6 +59,9 @@ Se evaluó en forma separada el pago de cada una de las rondas, calculando el be
 
 Podemos ver que cuando se evaluo con 100 juegos, solo las primeras rondas aportaron su valor promedio, pero no ocurrio ningun resultado en donde se consiga avanzar multiples rondas, concretamente la observación con el pago mas alto avanzo hasta la quinta ronda. A medida que aumentamos el numero de juegos en la muestra observamos que cada vez mas rondas aportan su valor promedio, concramente para la muestra con 10.000.000 de juegos multiples rondas aportaron su valor promedio y la observacion con el pago mas alto avanzo hasta la ronda 22.
 
+
+### Conclusión
+
 Podemos concluir de que elvando el numero de juegos lo suficiente, podriamos encontrar un punto en donde todas las rondas aporten su valor promedio y efectivamente el pago esperado será infinito, pero siempre que se tomen muestras pequeñas, la probabilidad de encontrarnos con pagos demasiado elevados es extremadamente baja.
 
 Seria interesante continuar este analisis evaluandolo desde la perspectiva de un organismo regulador, evaluar cual seria el capital minimo exigido por las normal de solvencia en este caso. 
