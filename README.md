@@ -47,7 +47,7 @@ Es momento de dejar de tomar observaciones y plantear el problema desde un punto
 
 El valor esperado es equivalente a multiplicar cada resultado posible por su probabilidad de ocurrencia, por lo tanto la ecuacion de arriba precisa de infinitos terminos, que se pueden expresar con la siguiente sumatoria:
 
-![sum2](https://latex.codecogs.com/svg.latex?E\left(X\right)=\sum%20_{n=1}^{\infty%20}\left(\frac{2^n}{2}\right)\cdot%20\left(\frac{1}{2^n}\right))
+![sum2](https://latex.codecogs.com/svg.latex?E\left(X\right)=\sum%20_{n=1}^{\infty%20}\left(2^{n-1}\right)\cdot%20\left(\frac{1}{2^n}\right))
 
 Resolviendo la ecuación:
 
