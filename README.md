@@ -45,13 +45,15 @@ El valor esperado es equivalente a multiplicar cada resultado posible por su pro
 
 Resolviendo la ecuación:
 
-![sum2](https://latex.codecogs.com/svg.latex?E\left(X\right)=1+1+1+1+1+1+1+1+1+...)
+![sum2](https://latex.codecogs.com/svg.latex?E\left(X\right)=0.5+0.5+0.5+0.5+0.5+0.5+0.5+...)
 
 Podemos ver que el valor esperado es la suma de infintos terminos de $1, es decir que el valor esperado es infinito.
 
 Surge un interrogante, como es posible que en las muestras realizadas previamente los pagos promedios de un numero grande de juegos tuvieron valores pequeños, concretamente de $5.70 para la primer muestra y de $8.366 para la segunda muestra. Estos valores estan extremadamente alejados de infinito.
 
 ### Elevando el tamaño de la muestra
+
+
 
 ![Caption for the picture.](/promedio_por_ronda.png)
 
