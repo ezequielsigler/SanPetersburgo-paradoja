@@ -39,7 +39,7 @@ Es momento de dejar de tomar observaciones y plantear el problema desde un punto
 
 ![sigma](https://latex.codecogs.com/svg.latex?E\left(X\right)=1\cdot%20\frac{1}{2}+2\cdot%20\frac{1}{4}+4\cdot%20\frac{1}{8}+...)
 
-![sum2](https://latex.codecogs.com/svg.latex?E\left(X\right)=\sum%20_{n=1}^{\infty%20}\:\left(\frac{2^n}{2}\right)\cdot%20\left(\frac{1}{2^n}\right))
+![sum2](https://latex.codecogs.com/svg.latex?E\left(X\right)=\sum%20_{n=1}^{\infty%20}\left(\frac{2^n}{2}\right)\cdot%20\left(\frac{1}{2^n}\right))
 
 ![sum2](https://latex.codecogs.com/svg.latex?E\left(X\right)=1+1+1+1+1+1+1+1+1+...)
 
