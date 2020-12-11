@@ -33,8 +33,9 @@ Vemos que el valor del "precio justo" cambio significativamente respecto de la m
 
 Podemos observar que en la mayoria de las observaciones el pago promedio es menor a $10, sin embargo se ve que siguen existiendo observaciones muy por encima de los $10. Observamos que existen valores extremadamente grandes.
 
+### Esperanza Matemática
 
-Es momento de dejar de tomar observaciones y plantear el problema desde un punto de vista matematico, concretamente debemos determinar el resultado esperado de participar de este juego o su esperanza matematica. 
+Es momento de dejar de tomar observaciones y plantear el problema desde un punto de vista matemático, concretamente debemos determinar el resultado esperado de participar de este juego o su esperanza matemática. 
 
 ![sigma](https://latex.codecogs.com/svg.latex?E\left(X\right)=1\cdot%20\frac{1}{2}+2\cdot%20\frac{1}{4}+4\cdot%20\frac{1}{8}+...)
 
@@ -47,6 +48,10 @@ Resolviendo la ecuación:
 ![sum2](https://latex.codecogs.com/svg.latex?E\left(X\right)=1+1+1+1+1+1+1+1+1+...)
 
 Podemos ver que el valor esperado es la suma de infintos terminos de $1, es decir que el valor esperado es infinito.
+
+Surge un interrogante, como es posible que en las muestras realizadas previamente los pagos promedios de un numero grande de juegos tuvieron valores pequeños, concretamente de $5.66 para la primer muestra y de $8.366 para la segunda muestra. Estos valores estan extremadamente alejados de infinito.
+
+### Elevando el tamaño de la muestra
 
 ![Caption for the picture.](/promedio_por_ronda.png)
 
