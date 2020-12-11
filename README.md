@@ -41,6 +41,7 @@ Es momento de dejar de tomar observaciones y plantear el problema desde un punto
 
 <!-- \sum_{i=1}^{100}i -->
 
+<!-- \sum_{i=1}^{100}(2i+1) -->
 
 ![Caption for the picture.](/promedio_por_ronda.png)
 
