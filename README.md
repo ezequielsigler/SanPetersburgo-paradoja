@@ -37,7 +37,7 @@ Podemos observar que en la mayoria de las observaciones el pago promedio es meno
 Es momento de dejar de tomar observaciones y plantear el problema desde un punto de vista matematico, concretamente debemos determinar el resultado esperado de participar de este juego o su esperanza matematica. 
 
 
-![sigma](http://latex.codecogs.com/svg.latex?%5Csum_%7Bi%3D1%7D%5E%7B100%7Di)
+![sigma](https://latex.codecogs.com/svg.latex?E\left(X\right)\:=\:1\cdot%20\frac{1}{2}+2\cdot%20\frac{1}{4}+4\cdot%20\frac{1}{8}+...)
 
 <!-- \sum_{i=1}^{100}i -->
 
