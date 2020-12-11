@@ -39,15 +39,11 @@ Es momento de dejar de tomar observaciones y plantear el problema desde un punto
 
 ![sigma](https://latex.codecogs.com/svg.latex?E\left(X\right)=1\cdot%20\frac{1}{2}+2\cdot%20\frac{1}{4}+4\cdot%20\frac{1}{8}+...)
 
-![sum2](https://latex.codecogs.com/svg.latex?E\left(X\right)=1\cdot%20\frac{1}{2}+2\cdot%20\frac{1}{4}+4\cdot%20\frac{1}{8}+...)
+![sum2](https://latex.codecogs.com/svg.latex?E\left(X\right)=\sum%20_{n=0}^{\infty%20}\left(1\right)^n\cdot%20\left(\frac{1}{2}\right)^n)
 
-![sum2](http://latex.codecogs.com/svg.latex?%5Csum_%7Bi%3D1%7D%5E%7B100%7D%282i&plus;1%29)
+![sum2](https://latex.codecogs.com/svg.latex?E\left(X\right)=1+1+1+1+1+1+1+1+1+...)
 
-<!-- \sum_{i=1}^{100}(2i+1) -->
 
-![sum2](http://latex.codecogs.com/svg.latex?%5Csum_%7Bi%3D1%7D%5E%7B100%7D%282i&plus;1%29)
-
-<!-- \sum_{i=1}^{100}((1/2)^i*2^i) -->
 
 ![Caption for the picture.](/promedio_por_ronda.png)
 
