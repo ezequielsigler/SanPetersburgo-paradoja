@@ -36,14 +36,17 @@ Podemos observar que en la mayoria de las observaciones el pago promedio es meno
 
 Es momento de dejar de tomar observaciones y plantear el problema desde un punto de vista matematico, concretamente debemos determinar el resultado esperado de participar de este juego o su esperanza matematica. 
 
-
 ![sigma](https://latex.codecogs.com/svg.latex?E\left(X\right)=1\cdot%20\frac{1}{2}+2\cdot%20\frac{1}{4}+4\cdot%20\frac{1}{8}+...)
+
+El valor esperado es equivalente a multiplicar cada resultado posible por su probabilidad de ocurrencia, por lo tanto la ecuacion de arriba precisa de infinitos terminos, que se pueden expresar con la siguiente sumatoria:
 
 ![sum2](https://latex.codecogs.com/svg.latex?E\left(X\right)=\sum%20_{n=1}^{\infty%20}\left(\frac{2^n}{2}\right)\cdot%20\left(\frac{1}{2^n}\right))
 
+Resolviendo la ecuación:
+
 ![sum2](https://latex.codecogs.com/svg.latex?E\left(X\right)=1+1+1+1+1+1+1+1+1+...)
 
-
+Podemos ver que el valor esperado es la suma de infintos terminos de $1, es decir que el valor esperado es infinito.
 
 ![Caption for the picture.](/promedio_por_ronda.png)
 
