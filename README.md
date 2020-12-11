@@ -1,7 +1,9 @@
 # SanPetersburgo-paradoja
 
 Los codigos utilizados en este analisis pueden ser encontrados en los siguientes links:
+
 https://www.kaggle.com/ezequielsigler/paradoja-san-petersburgo
+
 https://github.com/ezequielsigler/SanPetersburgo-paradoja/blob/master/R
 
 ## Se analizó desde un punto de vista empírico la paradoja de San Petersburgo
