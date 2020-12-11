@@ -37,10 +37,9 @@ Podemos observar que en la mayoria de las observaciones el pago promedio es meno
 Es momento de dejar de tomar observaciones y plantear el problema desde un punto de vista matematico, concretamente debemos determinar el resultado esperado de participar de este juego o su esperanza matematica. 
 
 
-\mho
-\[
-\prod_{i=1}^{3}x_{i}=x_{1}\cdot x_{2}\cdot x_{3} 
-\]
+![sigma](http://latex.codecogs.com/svg.latex?%5Csum_%7Bi%3D1%7D%5E%7B100%7Di)
+
+<!-- \sum_{i=1}^{100}i -->
 
 
 ![Caption for the picture.](/promedio_por_ronda.png)
