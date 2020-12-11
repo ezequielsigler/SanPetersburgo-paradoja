@@ -39,7 +39,7 @@ Es momento de dejar de tomar observaciones y plantear el problema desde un punto
 
 ![sigma](https://latex.codecogs.com/svg.latex?E\left(X\right)\:=\:1\cdot%20\frac{1}{2}+2\cdot%20\frac{1}{4}+4\cdot%20\frac{1}{8}+...)
 
-
+![sum2](https://latex.codecogs.com/svg.latex?E\left(X\right)\:=\:1\cdot%20\frac{1}{2}+2\cdot%20\frac{1}{4}+4\cdot%20\frac{1}{8}+...)
 
 ![sum2](http://latex.codecogs.com/svg.latex?%5Csum_%7Bi%3D1%7D%5E%7B100%7D%282i&plus;1%29)
 
