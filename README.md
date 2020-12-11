@@ -41,6 +41,8 @@ Es momento de dejar de tomar observaciones y plantear el problema desde un punto
 
 <!-- \sum_{i=1}^{100}i -->
 
+![sum2](http://latex.codecogs.com/svg.latex?%5Csum_%7Bi%3D1%7D%5E%7B100%7D%282i&plus;1%29)
+
 <!-- \sum_{i=1}^{100}(2i+1) -->
 
 ![Caption for the picture.](/promedio_por_ronda.png)
